@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Javascript User Form</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="p-5 md:container md:mx-auto">
+        <h1 class="mx-auto w-fit text-4xl">Javascript User Form</h1>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="p-5 md:container md:mx-auto">
+        <form action="" id="user-form" class="mx-auto w-9/12">
+          <div class="mb-6">
+            <label for="name" class="text-md block p-1 font-medium">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="w-full rounded-lg border-2 p-1"
+              name="name"
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <div class="mb-6">
+            <label for="email" class="text-md block p-1 font-medium">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="w-full rounded-lg border-2 p-1"
+              name="email"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div class="mb-6">
+            <label for="country" class="text-md block p-1 font-medium">Country</label>
+            <select id="country" class="w-full rounded-lg border-2 p-1" name="country">
+              <option value="default">Choose a country</option>
+              <option value="us">United States</option>
+              <option value="france">France</option>
+              <option value="germany">Germany</option>
+            </select>
+          </div>
+
+          <div class="mb-6">
+            <label for="password" class="text-md block p-1 font-medium">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="w-full rounded-lg border-2 p-1"
+              name="password"
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <div class="mb-6">
+            <label for="password-confirmation" class="text-md block p-1 font-medium">Confirm Password</label>
+            <input
+              type="password"
+              id="passwordConfirmation"
+              class="w-full rounded-lg border-2 p-1"
+              name="passwordConfirmation"
+              placeholder="Confirm your password"
+            />
+          </div>
+
+          <div class="align-center mb-6 flex justify-end">
+            <!-- Submit button will be loaded here -->
+            <button type="submit" id="submit" class="rounded-lg border-2 bg-sky-600 px-4 py-2 text-white">
+              Submit
+            </button>
+          </div>
+        </form>
+
+        <!-- Search Bar -->
+        <div class="m-12 mx-auto flex w-9/12 items-center rounded-md border border-gray-300 px-3 py-2 shadow-sm">
+          <input
+            type="text"
+            id="textSearch"
+            class="flex-grow rounded-md outline-none focus:border-indigo-500 focus:ring-indigo-500"
+            placeholder="Search..."
+            name="search"
+          />
+          <button type="button" id="seach" class="rounded-lg border-2 bg-sky-600 px-4 py-2 text-white">Search</button>
+        </div>
+
+        <table class="... mx-auto w-9/12 border-collapse border border-slate-400">
+          <thead>
+            <tr>
+              <th class="... border border-slate-300 p-3 text-left">Name</th>
+              <th class="... border border-slate-300 p-3 text-left">Email Address</th>
+              <th class="... border border-slate-300 p-3 text-left">Country</th>
+              <th class="... border border-slate-300 p-3 text-left">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <!-- Users with action buttons will be loaded here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
